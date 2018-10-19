@@ -1,7 +1,7 @@
 
 /* Control the left side */
 .first {
-  position:static;
+  position:absolute;
   background-image: url("Assets/test.png");
   height: 25%;
   width: 25%;
@@ -15,10 +15,11 @@
 
 /* Control the right side */
 .second {
-  position:static;
+  position:absolute;
   background-image: url("Assets/test.png");
   height: 25%;
   width: 25%;
+  left:25%;
   background-size: cover;
   background-position: 0 0;
   float:left;
