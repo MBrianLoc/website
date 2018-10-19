@@ -1,0 +1,88 @@
+
+/* Control the left side */
+.first {
+  position:static;
+  background-image: url("Assets/test.png");
+  height: 25%;
+  width: 25%;
+  float:left;
+  background-size: cover;
+  background-position: 0 0;
+  overflow:hidden;
+   -webkit-filter: grayscale(100%);
+   transition: .5s ease;
+}
+
+/* Control the right side */
+.second {
+  position:static;
+  background-image: url("Assets/test.png");
+  height: 25%;
+  width: 25%;
+  background-size: cover;
+  background-position: 0 0;
+  float:left;
+   -webkit-filter: grayscale(100%);
+   transition: .5s ease;
+}
+
+.third {
+  background-image: url("Assets/test.png");
+  float:left;
+  background-repeat:no-repeat;/*we want to have one single image not a repeated one*/
+  background-size:cover;
+   -webkit-filter: grayscale(100%);
+   transition: .5s ease;
+}
+
+.fourth {
+  background-image: url("Assets/test.png");
+  float:left;
+  background-repeat:no-repeat;/*we want to have one single image not a repeated one*/
+  background-size:cover;
+   -webkit-filter: grayscale(100%);
+   transition: .5s ease;
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ text-align: center;
+}
+
+/* Style the image inside the centered container, if needed */
+.centered img {
+ width: 150px;
+ border-radius: 50%;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 30px 64px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 8px 4px;
+    cursor: pointer;
+}
+
+.left:hover {
+  -webkit-filter: grayscale(0%);
+  transition: .5s ease;
+}
+
+.right:hover {
+  -webkit-filter: grayscale(0%);
+  transition: .5s ease;
+}
+
+.adminButton {
+    position:absolute;
+    left:90%;
+}
