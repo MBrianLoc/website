@@ -1,5 +1,9 @@
 
-/* Control the left side */
+body,html {
+  margin:0;
+  padding:0;
+}
+
 .first {
   position:absolute;
   background-image: url("Assets/spaceshooter.gif");
@@ -10,7 +14,6 @@
   background-position: 0 0;
 }
 
-/* Control the right side */
 .second {
   position:absolute;
   background-image: url("Assets/website.gif");
@@ -53,23 +56,6 @@
 }
 
 /* Style the image inside the centered container, if needed */
-.centered img {
- width: 150px;
- border-radius: 50%;
-}
-
-.button {
-    background-color: #002b80;
-    border: 1px solid black;
-    color: white;
-    padding: 10px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 24px;
-    margin: 8px 4px;
-    cursor: pointer;
-}
 .overlay {
   position: absolute;
   top: 0;
@@ -88,6 +74,12 @@
   font-size: 20px;
   text-align: center;
 }
+.title {
+  color: white;
+  font-size: 200px;
+  top:90%;
+  left:20%;
+}
 
 .overlay:hover {
   opacity:.95;
@@ -95,12 +87,15 @@
 }
 
 name {
-    float: left;
-    position:absolute;
+  clear:both;
+  padding:0;
+  position:absolute;
     top:25%;
+    float:left;
     width: 100%;
-    height:50%;
-    background-color: #666;
+    height:35%;
+    background-color: #002b80;
+    display:inline-block;
 }
 .adminButton {
     position:absolute;
