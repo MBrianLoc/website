@@ -83,7 +83,7 @@
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #008CBA;
+  background-color: #002b80;
 }
 
 .text {
@@ -99,7 +99,7 @@
 }
 
 .overlay:hover {
-  opacity:1;
+  opacity:.95;
   transition: .5s ease;
 }
 
