@@ -5,12 +5,10 @@
   background-image: url("Assets/test.png");
   height: 25%;
   width: 25%;
-  float:left;
+  left:0;
   background-size: cover;
   background-position: 0 0;
   overflow:hidden;
-   -webkit-filter: grayscale(100%);
-   transition: .5s ease;
 }
 
 /* Control the right side */
@@ -23,26 +21,29 @@
   background-size: cover;
   background-position: 0 0;
   float:left;
-   -webkit-filter: grayscale(100%);
-   transition: .5s ease;
+  transition: .5s ease;
 }
 
 .third {
+  position:absolute;
   background-image: url("Assets/test.png");
+  height: 25%;
+  width: 25%;
+  left:50%;
+  background-size: cover;
+  background-position: 0 0;
   float:left;
-  background-repeat:no-repeat;/*we want to have one single image not a repeated one*/
-  background-size:cover;
-   -webkit-filter: grayscale(100%);
-   transition: .5s ease;
 }
 
 .fourth {
+  position:absolute;
   background-image: url("Assets/test.png");
+  height: 25%;
+  width: 25%;
+  left:75%;
+  background-size: cover;
+  background-position: 0 0;
   float:left;
-  background-repeat:no-repeat;/*we want to have one single image not a repeated one*/
-  background-size:cover;
-   -webkit-filter: grayscale(100%);
-   transition: .5s ease;
 }
 
 /* If you want the content centered horizontally and vertically */
@@ -72,14 +73,33 @@
     margin: 8px 4px;
     cursor: pointer;
 }
-
-.left:hover {
-  -webkit-filter: grayscale(0%);
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
   transition: .5s ease;
+  background-color: #008CBA;
 }
 
-.right:hover {
-  -webkit-filter: grayscale(0%);
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlay:hover {
+  opacity:1;
   transition: .5s ease;
 }
 
